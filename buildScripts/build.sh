@@ -27,7 +27,7 @@ for sdk in $SDKS; do
         cert="$WORKSPACE/build/$provision"
         archive="$OUTPUT/$JOB_NAME-$BUILD_NUMBER-$config.zip";
         [ -f "$cert" ] && cp "$cert" "$PROFILE_HOME"
-        cd $WORKSPACE/iphone
+#        cd $WORKSPACE/iphone
 
         xcodebuild -configuration $config -sdk $sdk clean;
         xcodebuild -configuration $config -sdk $sdk || failed build;

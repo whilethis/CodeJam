@@ -13,7 +13,7 @@ mkdir -p $OUTPUT
 PROFILE_HOME=~/Library/MobileDevice/Provisioning\ Profiles/
 KEYCHAIN=~/Library/Keychains/login.keychain
 
-. "$WORKSPACE/build/build.config"
+. "$WORKSPACE/buildScripts/build.config"
 
 [ -d "$PROFILE_HOME" ] || mkdir -p "$PROFILE_HOME"
 security unlock -p $PASSWORD

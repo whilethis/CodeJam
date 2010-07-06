@@ -29,7 +29,7 @@ for sdk in $SDKS; do
         [ -f "$cert" ] && cp "$cert" "$PROFILE_HOME"
 
         xcodebuild -configuration $config -sdk $sdk clean;
-        xcodebuild -configuration $config -sdk $sdk -target LogicTests || failed build;
+        xcodebuild -configuration "Debug" -sdk $SIMULATOR -target LogicTests | /usr/local/bin/ocunit2junit.rb;
         xcodebuild -configuration $config -sdk $sdk || failed build;
         cd build/$config-iphoneos;
         if [ $config == "Release" ]; then

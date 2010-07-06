@@ -23,6 +23,8 @@
 	[annotation setTitle:@"Annotation title"];
 	
 	STAssertEquals([annotation title], @"Annotation title", @"Titles do not match");
+	
+	[annotation release];
 }
 
 

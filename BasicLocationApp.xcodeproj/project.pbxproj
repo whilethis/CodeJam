@@ -28,7 +28,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BasicLocationAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLocationAppAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BasicLocationAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicLocationAppAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* BasicLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* BasicLocationApp. */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicLocationApp.; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* BasicLocationAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicLocationAppViewController.xib; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* BasicLocationApp.app */,
+				1D6058910D05DD3D006BFB54 /* BasicLocationApp. */,
 				CACCA88C11E3A7F5009E6C69 /* LogicTests.octest */,
 			);
 			name = Products;
@@ -195,7 +195,7 @@
 			);
 			name = BasicLocationApp;
 			productName = BasicLocationApp;
-			productReference = 1D6058910D05DD3D006BFB54 /* BasicLocationApp.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* BasicLocationApp. */;
 			productType = "com.apple.product-type.application";
 		};
 		CACCA88B11E3A7F5009E6C69 /* LogicTests */ = {
@@ -411,15 +411,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brandon Alexander (4R4Y6B4GV6)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "-lgcov";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
+				WRAPPER_EXTENSION = "";
 			};
 			name = "Debug-GCov";
 		};
@@ -462,6 +466,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos4.0;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = "Debug-GCov";

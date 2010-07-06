@@ -407,6 +407,65 @@
 			};
 			name = Release;
 		};
+		CACCA8F011E3D7DB009E6C69 /* Debug-GCov */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-lgcov";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = "Debug-GCov";
+		};
+		CACCA8F111E3D7DB009E6C69 /* Debug-GCov */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BasicLocationApp_Prefix.pch;
+				INFOPLIST_FILE = "BasicLocationApp-Info.plist";
+				PRODUCT_NAME = BasicLocationApp;
+			};
+			name = "Debug-GCov";
+		};
+		CACCA8F211E3D7DB009E6C69 /* Debug-GCov */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Debug-GCov";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +473,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
+				CACCA8F111E3D7DB009E6C69 /* Debug-GCov */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -423,6 +483,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
+				CACCA8F011E3D7DB009E6C69 /* Debug-GCov */,
 				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -432,6 +493,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CACCA88E11E3A7F5009E6C69 /* Debug */,
+				CACCA8F211E3D7DB009E6C69 /* Debug-GCov */,
 				CACCA88F11E3A7F5009E6C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

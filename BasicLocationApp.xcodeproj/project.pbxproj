@@ -287,8 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */,
 				CACCA8D611E3C645009E6C69 /* LocationMapAnnotation.m in Sources */,
+				CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,5 +14,9 @@
 	STFail(@"This is going to fail.");
 }
 
+- (void) testSucceed {
+	STAssertTrue(TRUE, @"");
+}
+
 
 @end

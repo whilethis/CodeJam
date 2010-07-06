@@ -30,14 +30,14 @@ for sdk in $SDKS; do
 
         xcodebuild -configuration $config -sdk $sdk clean;
         xcodebuild -configuration "Debug" -sdk $SIMULATOR -target LogicTests | /usr/local/bin/ocunit2junit.rb;
-        xcodebuild -configuration $config -sdk $sdk || failed build;
-        cd build/$config-iphoneos;
-        if [ $config == "Release" ]; then
-            zip -r -T -y "$archive" *.app* || failed zip
-            zip -j -T "$archive" "$WORKSPACE/iphone/icon.png" || failed icon
-        else
-            zip -r -T -y "$archive" *.app || failed zip
-            zip -j -T "$archive" "$cert" || failed cert
-        fi
+        #xcodebuild -configuration $config -sdk $sdk || failed build;
+        #cd build/$config-iphoneos;
+        #if [ $config == "Release" ]; then
+        #    zip -r -T -y "$archive" *.app* || failed zip
+        #    zip -j -T "$archive" "$WORKSPACE/iphone/icon.png" || failed icon
+        #else
+        #    zip -r -T -y "$archive" *.app || failed zip
+        #    zip -j -T "$archive" "$cert" || failed cert
+        #fi
     done
 done

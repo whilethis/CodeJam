@@ -18,5 +18,9 @@
 	STAssertTrue(TRUE, @"");
 }
 
+- (void) testAgain {
+	STAssertTrue(TRUE, @"");
+}
+
 
 @end

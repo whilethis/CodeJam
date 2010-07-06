@@ -20,6 +20,7 @@
 		CA11D34211A8353900439222 /* LocationMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11D34111A8353900439222 /* LocationMapAnnotation.m */; };
 		CA11D38611A83BB800439222 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11D38411A83BB800439222 /* BrowserViewController.m */; };
 		CA11D38711A83BB800439222 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA11D38511A83BB800439222 /* BrowserViewController.xib */; };
+		CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCA89711E3A827009E6C69 /* LogicTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +38,16 @@
 		32CA4F630368D1EE00C91783 /* BasicLocationApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLocationApp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BasicLocationApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BasicLocationApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		CA11D2D611A8285800439222 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CA11D30311A8322300439222 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CA11D30311A8322300439222 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = /Users/brandon/Development/CodeJam/iphoneos3.1.3/System/Library/Frameworks/CoreLocation.framework; sourceTree = "<absolute>"; };
 		CA11D34011A8353900439222 /* LocationMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapAnnotation.h; sourceTree = "<group>"; };
 		CA11D34111A8353900439222 /* LocationMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapAnnotation.m; sourceTree = "<group>"; };
 		CA11D38311A83BB800439222 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
 		CA11D38411A83BB800439222 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		CA11D38511A83BB800439222 /* BrowserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserViewController.xib; sourceTree = "<group>"; };
+		CACCA88C11E3A7F5009E6C69 /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CACCA88D11E3A7F5009E6C69 /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
+		CACCA89611E3A827009E6C69 /* LogicTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicTest.h; sourceTree = "<group>"; };
+		CACCA89711E3A827009E6C69 /* LogicTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +63,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACCA88911E3A7F5009E6C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CACCA89411E3A803009E6C69 /* Tests */,
 				CA11D38211A83B9300439222 /* BrowserViewController */,
 				CA11D33F11A8352000439222 /* Model */,
 				1D3623240D0F684500981E51 /* BasicLocationAppAppDelegate.h */,
@@ -78,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* BasicLocationApp.app */,
+				CACCA88C11E3A7F5009E6C69 /* LogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +104,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				CA11D30311A8322300439222 /* CoreLocation.framework */,
+				CACCA88D11E3A7F5009E6C69 /* LogicTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA11D30311A8322300439222 /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -144,6 +159,24 @@
 			name = BrowserViewController;
 			sourceTree = "<group>";
 		};
+		CACCA89411E3A803009E6C69 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CACCA89511E3A80C009E6C69 /* Logic */,
+			);
+			name = Tests;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CACCA89511E3A80C009E6C69 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CACCA89611E3A827009E6C69 /* LogicTest.h */,
+				CACCA89711E3A827009E6C69 /* LogicTest.m */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +197,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* BasicLocationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CACCA88B11E3A7F5009E6C69 /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CACCA89011E3A7F5009E6C69 /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				CACCA88711E3A7F5009E6C69 /* Resources */,
+				CACCA88811E3A7F5009E6C69 /* Sources */,
+				CACCA88911E3A7F5009E6C69 /* Frameworks */,
+				CACCA88A11E3A7F5009E6C69 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = CACCA88C11E3A7F5009E6C69 /* LogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* BasicLocationApp */,
+				CACCA88B11E3A7F5009E6C69 /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,7 +244,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACCA88711E3A7F5009E6C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CACCA88A11E3A7F5009E6C69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -204,6 +279,14 @@
 				28D7ACF80DDB3853001CB0EB /* BasicLocationAppViewController.m in Sources */,
 				CA11D34211A8353900439222 /* LocationMapAnnotation.m in Sources */,
 				CA11D38611A83BB800439222 /* BrowserViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CACCA88811E3A7F5009E6C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +329,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -261,6 +344,64 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+		CACCA88E11E3A7F5009E6C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CACCA88F11E3A7F5009E6C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -281,6 +422,15 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CACCA89011E3A7F5009E6C69 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACCA88E11E3A7F5009E6C69 /* Debug */,
+				CACCA88F11E3A7F5009E6C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

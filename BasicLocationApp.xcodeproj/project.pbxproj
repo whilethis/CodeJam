@@ -21,6 +21,7 @@
 		CA11D38611A83BB800439222 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11D38411A83BB800439222 /* BrowserViewController.m */; };
 		CA11D38711A83BB800439222 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA11D38511A83BB800439222 /* BrowserViewController.xib */; };
 		CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCA89711E3A827009E6C69 /* LogicTest.m */; };
+		CACCA8D611E3C645009E6C69 /* LocationMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11D34111A8353900439222 /* LocationMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACCA89811E3A827009E6C69 /* LogicTest.m in Sources */,
+				CACCA8D611E3C645009E6C69 /* LocationMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

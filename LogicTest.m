@@ -7,7 +7,7 @@
 //
 
 #import "LogicTest.h"
-
+#import "Classes/LocationMapAnnotation.h"
 
 @implementation LogicTest
 - (void) testFail {
@@ -18,8 +18,11 @@
 	STAssertTrue(TRUE, @"");
 }
 
-- (void) testAgain {
-	STAssertTrue(TRUE, @"");
+- (void) testLocationMapAnnotation {
+	LocationMapAnnotation *annotation = [[LocationMapAnnotation alloc] init];
+	[annotation setTitle:@"Annotation title"];
+	
+	STAssertEquals([annotation title], @"Annotation title", @"Titles do not match");
 }
 
 

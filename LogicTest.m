@@ -11,7 +11,7 @@
 
 @implementation LogicTest
 - (void) testFail {
-	STAssertTrue(FALSE, @"Breaking build on purpose.");
+	STAssertTrue(TRUE, @"Breaking build on purpose.");
 }
 
 - (void) testSucceed {
